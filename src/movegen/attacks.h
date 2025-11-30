@@ -61,9 +61,11 @@
 
 uint64_t pawn_attacks[SIDES_SIZE][SQUARES_SIZE];
 uint64_t knight_attacks[SQUARES_SIZE];
+uint64_t king_attacks[SQUARES_SIZE];
 
 uint64_t mask_pawn_attacks(int side, int square);
 uint64_t mask_knight_attacks(int square);
+uint64_t mask_king_attacks(int square);
 
 void init_attack_tables();
 
